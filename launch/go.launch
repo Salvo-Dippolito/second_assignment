@@ -1,0 +1,5 @@
+<launch>
+  <node name="pilot" pkg ="second_assignment" type = "pilot_node" />
+  <node name="race_engineer" pkg ="second_assignment" type = "race_eng_node" output="screen" required="true"/>
+  <node name="track" pkg ="stage_ros" type = "stageros" args = "$(find second_assignment)/world/my_world.world"/>
+</launch>

@@ -1,0 +1,4 @@
+char command
+---
+float32 variation
+float32 current_speed
