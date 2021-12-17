@@ -6,7 +6,7 @@ The robot should move autonomously through a race track, withouth hitting the ma
 The user must be able to change the robot's speed through the use of a service. A minimum of two ros
 nodes must be used. The nodes should comunicate by using the tools provided by the ros system.
 
-### Chosen approach to complete objectives ### 
+### Chosen Approach to Complete the Objectives ### 
 
 The main idea behind this solution is that the robot should keep driving straight until it gets 
 too close to the wall in front of it. When the distance from the front wall falls under a given 
@@ -25,7 +25,7 @@ from the aformentioned service. The race_eng node can also quit the whole simula
 processes with it, when the simulation is launched with the launch file found in this repository.
  
 
-### Pseudo-code for the solution that has been implemented ###
+### Pseudo-code for the Solution that has Been Implemented ###
 #### pilot.cpp ####
     
     subscribe to the /base_scan topic
