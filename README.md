@@ -91,18 +91,27 @@ processes with it, when the simulation is launched with the launch file found in
             if it's p: call /reset_positions
             if it's q: return 0, exit the program
 
-### contents of the package ###
+### Contents of the Package ###
 
-*launch folder: for the go.launch script needed to run everything
+- launch folder: for the go.launch script needed to run everything
 
-*src folder: for the two .cpp scripts of the nodes developed for this assignment
+- src folder: for the two .cpp scripts of the nodes developed for this assignment
 
-*srv folder: for the Speedvar.srv file used to define the structure of the service's messages
+- srv folder: for the Speedvar.srv file used to define the structure of the service's messages
 
-*world folder: contains the script for the simulated environment and the image of the track
+- world folder: contains the script for the simulated environment and the image of the track
 
-*CmakeLists.txt and package.xml files are for ros functionalities
+- CmakeLists.txt and package.xml files are for ros functionalities
 
+	
+### Running the Simulator ###
+
+After downloading this pre-built package, running this launch command from the terminal will start the ros system
+and all the nodes necessary to run this simulation af described in this readme file. 
+
+```
+$ roslaunch second_assignment go.launch
+```
 
 
 ### Future Improvements ###
@@ -115,13 +124,4 @@ speed_regulation system largely overpowers the effects of a speed change issued 
 autonomous_driving model, with constant speeds for example, would more easily show the effects of user intervention
 on the robot's movements.
 
-	
-### Running the Simulator ###
-
-After downloading this pre-built package, running this launch command from the terminal will start the ros system
-and all the nodes necessary to run this simulation af described in this readme file. 
-
-```
-$ roslaunch second_assignment go.launch
-```
 
